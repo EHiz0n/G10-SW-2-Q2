@@ -26,3 +26,10 @@ def calculate(e):
 
     average = (mathtotal + sciencetotal + englishtotal + historytotal + geographytotal + philosophytotal) / 26
     display(f"{first_name} {last_name}, your average grade is {average:.2f}", target="output")
+   
+    document.getElementById('output').innerHTML = ' '
+    if average > 75:
+        display(f'You pass', target='output')
+    else: 
+        display(f'You fail', target='output')
+ 
